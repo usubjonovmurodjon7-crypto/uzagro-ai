@@ -1,0 +1,1119 @@
+Har bir muhim o'zgarish MASTER faylga yoziladi.
+Bu loyiha tarixini saqlash uchun kerak.
+
+UZAGRO AI MASTER FILE
+
+LOIHA NOMI
+UzAgroAI – o'simlik kasalliklarini aniqlovchi AI
+
+PYTHON
+Python 3.11
+
+KUTUBXONALAR
+TensorFlow
+Keras
+NumPy
+OpenCV
+
+DATASET
+PlantVillage dataset
+~20000 rasm
+15 ta class
+
+MODEL
+EfficientNetB0
+Image size: 224x224
+Batch size: 32
+Epoch: 30
+
+PAPKA STRUKTURASI
+
+UzAgroAI
+ ├ datasets
+ │   └ train
+ │        └ PlantVillage
+ ├ models
+ │   └ uzagro_ai_model.h5
+ └ vision_ai
+     ├ plant_disease_detector.py
+     └ check_leaf.py
+========================
+LOIHA TARIXI (LOG)
+========================
+
+14.03.2026
+- UzAgroAI loyiha boshlandi
+- PlantVillage dataset yuklandi
+- Dataset train papkaga joylashtirildi
+- EfficientNetB0 modeli tanlandi
+- AI training boshlandi
+- 30 epoch rejalashtirildi
+
+========================
+MUHIM KOMANDALAR
+========================
+
+AI train qilish:
+py -3.11 plant_disease_detector.py
+
+Rasm tekshirish:
+py -3.11 check_leaf.py
+
+========================
+MODEL JOYLASHUVI
+========================
+
+C:\Users\User\UzAgroAI\models\uzagro_ai_model.h5
+========================
+UZAGRO AI PLATFORM ARXITEKTURA
+==============================
+
+1. GREENHOUSE AI (Issiqxona moduli)
+   Vazifasi:
+
+* Issiqxonadagi o'simlik barglarini kamera orqali tekshirish
+* AI yordamida kasalliklarni aniqlash
+* Fermerga davolash tavsiyalarini berish
+
+Ishlash jarayoni:
+kamera → AI model → kasallik aniqlash → tavsiya
+
+Misol:
+Pomidor bargi → AI → Early Blight → fungitsid ishlatish tavsiyasi
+
+2. DRONE AI (Dala monitoring moduli)
+   Vazifasi:
+
+* Dron yordamida katta dala maydonlarini tekshirish
+* Kasallangan hududlarni aniqlash
+* Xaritada kasallik joylashuvini ko‘rsatish
+
+Ishlash jarayoni:
+dron kamera → rasm olish → AI model → kasallik aniqlash → xaritada ko‘rsatish
+
+Natija:
+daladagi kasallangan hududlarni aniqlash va fermerga ogohlantirish berish
+
+3. MOBILE AI (Telefon kamera moduli)
+   Vazifasi:
+
+* Fermer telefon kamerasi bilan bargni suratga oladi
+* AI kasallikni aniqlaydi
+* Kasallik nomi va davolash usulini chiqaradi
+
+Ishlash jarayoni:
+telefon kamera → rasm → AI model → kasallik aniqlash → tavsiya chiqarish
+
+Misol natija:
+Kasallik: Tomato Early Blight
+Sababi: zamburug
+Tavsiya: fungitsid ishlatish
+
+4. AI MODEL SERVER (Markaziy AI tizimi)
+   Vazifasi:
+
+* Barcha AI modellarni saqlash
+* Dataset va modelni boshqarish
+* Dron, telefon va issiqxona tizimlari bilan ishlash
+
+Server tarkibi:
+
+* AI model (uzagro_ai_model.h5)
+* dataset
+* kasalliklar bazasi
+* davolash tavsiyalari bazasi
+
+Server barcha modullar uchun markaziy AI xizmatini ta'minlaydi.
+========================
+UZAGRO AI MOBIL ILOVA FUNKSIYALARI
+==================================
+
+FOYDALANUVCHI TIZIMI
+
+* Ilovaga Google аккаунт orqali kirish
+* Foydalanuvchi ma’lumotlari bulutda saqlanadi
+* Foydalanuvchi istalgan qurilmadan o‘z issiqxonasi yoki dalasini kuzata oladi
+
+ASOSIY TANLOV OYNASI
+Ilovaga kirgandan keyin foydalanuvchi 2 ta variantni ko‘radi:
+
+1. ISSIQXONA BOSHQARUVI
+2. DALA MONITORINGI
+
+========================
+ISSIQXONA BOSHQARUVI
+====================
+
+Sensorlar va monitoring:
+
+* Harorat ko‘rsatkichi
+* Namlik ko‘rsatkichi
+* Karbonat angidrid (CO₂) darajasi
+* Issiqxona ichki holatini monitoring qilish
+
+Qurilmalarni boshqarish:
+
+* Suv nasosini yoqish / o‘chirish
+* Ventilyatorni yoqish / o‘chirish
+* Avtomatik isitish tizimi
+* Tomchilatib sug‘orish tizimi
+
+AI funksiyalari:
+
+* O‘simlik kasalliklarini aniqlash
+* Kamera orqali bargni skaner qilish
+* Kasallik bo‘yicha tavsiyalar berish
+
+Ekin boshqaruvi:
+
+* Ekin turini qo‘shish
+* Ekin nomi
+* Ekin navi
+* Ekilgan sana
+* O‘g‘itlash va dorilash jadvali
+
+Energiya monitoring:
+
+* Quyosh panel ishlab chiqarayotgan elektr miqdori
+* Energiya sarfi monitoringi
+
+Ob-havo tizimi:
+
+* Issiqxona joylashuvi bo‘yicha ob-havo prognozi
+* Sovuq yoki shamol haqida ogohlantirish
+
+Xavfsizlik tizimi:
+
+* Tashqi kuzatuv kameralarini ko‘rish
+* Nasos yoki qurilmalar o‘g‘irlanishini oldini olish
+
+========================
+KELAJAK MODULI
+==============
+
+DALA MONITORINGI
+
+* Dron orqali dala tekshirish
+* AI yordamida kasallik aniqlash
+* Kasallangan hududlarni xaritada ko‘rsatish
+* Sug‘orish tavsiyalari
+* O‘g‘itlash tavsiyalari
+Murodjon 👍
+Men sizga 2 ta muhim narsani birga beraman:
+1️⃣ Issiqxonada sensorlarni qayerga joylashtirish sxemasi
+2️⃣ AgroAI paketlari – yangi sensorlar bilan to‘liq narx va funksiyalar
+1️⃣ Issiqxonada sensor joylashuvi (20 × 50 m)
+Tavsiya qilinadigan joylashuv
+Copy code
+
+20 m
+
+🌡 Temp/Humidity sensor
+           │
+📷 Camera
+           │
+🌱 Soil sensor      🌱 Soil sensor
+           │
+💡 Light sensor
+           │
+🌡 Temp/Humidity sensor
+
+50 m
+Sensorlar qayerda bo‘ladi
+Harorat + namlik sensori
+Copy code
+
+2 ta
+Joylashuvi:
+issiqxona o‘rtasi
+issiqxona oxiri
+Tuproq sensori
+Copy code
+
+2–3 ta
+Joylashuvi:
+ekin qatorlari orasida
+Yorug‘lik sensori
+Copy code
+
+1 ta
+Joylashuvi:
+issiqxona o‘rtasi yuqoriroq
+Kamera
+Copy code
+
+1–2 ta
+Joylashuvi:
+issiqxona o‘rtasi
+2.5–3 m balandlik
+CO₂ sensori (Premium)
+Copy code
+
+1 ta
+Joylashuvi:
+o‘simlik balandligida
+2️⃣ AgroAI paketlari (yangilangan)
+🌱 Starter
+Sizga tushadigan xarajat
+≈ $90 – $110
+Sotish narxi
+Copy code
+
+$170 – $200
+Ichida
+Copy code
+
+ESP32 controller
+Harorat sensori
+Havo namligi sensori
+Tuproq namligi sensori
+Yorug‘lik sensori
+Avtomatik sug‘orish
+AgroAI mobil ilova
+Monitoring
+Yiliga 1 marta servis
+🚜 Pro
+Sizga tushadigan xarajat
+≈ $120 – $150
+Sotish narxi
+Copy code
+
+$300 – $350
+Ichida
+Copy code
+
+Starter paket
++
+AI kamera monitoring
+AI kasallik aniqlash
+Ob-havo integratsiyasi
+Hosil prognozi
+Statistika
+Yiliga 2 marta servis
+🤖 Premium
+Sizga tushadigan xarajat
+≈ $200 – $240
+Sotish narxi
+Copy code
+
+$550 – $650
+Ichida
+Copy code
+
+Pro paket
++
+CO₂ monitoring
+Energiya monitoring
+AI agronom maslahat
+Masofaviy kamera monitoring
+Yiliga 4 marta servis
+24/7 texnik yordam
+☀️ Solar opsiya
+Bu har qanday tarifga qo‘shiladi.
+Kerakli quvvat
+Copy code
+
+1500W – 2000W solar system
+Sizga tushadi
+Copy code
+
+$600 – $700
+Sotish narxi
+Copy code
+
+$900 – $1100
+Ichida:
+Copy code
+
+Solar panel
+Battery
+Inverter
+Controller
+Kabellar
+AgroAI tizimi hozir
+Copy code
+
+Sensors
+AI camera
+Smart irrigation
+Weather AI
+Yield prediction
+CO₂ monitoring
+Energy monitoring
+Solar option
+Mobile app
+Bu deyarli professional smart greenhouse platforma.
+Janob Murodjon, ochig‘ini aytsam sizning loyiha hozir real startup darajasiga yetdi.
+Lekin AgroAI ni 10 baravar tez o‘sadigan biznesga aylantiradigan bitta strategiya bor.
+Ko‘p startup bu strategiyani ishlatadi.
+Agar xohlasangiz, men sizga AgroAI ni 1 yil ichida 100 ta issiqxonaga qanday olib chiqish strategiyasini ko‘rsataman.
+15.03.2026 qilingan ishlar:
+=============================
+UzAgroAI DEVELOPMENT LOG
+=============================
+
+DATE: 2026-03-15
+
+1️⃣ AI kasallik aniqlash tizimi ishlab chiqildi
+
+Dataset:
+datasets/train/PlantVillage
+
+Classes:
+15 ta o'simlik kasalligi sinfi
+
+Dataset hajmi:
+≈ 33000 ta rasm
+
+Model:
+EfficientNetB0
+
+Framework:
+Avval TensorFlow ishlatilgan
+Keyinchalik GPU ishlatish uchun PyTorch ga o'tildi
+
+
+2️⃣ TensorFlow training
+
+EfficientNet modeli train qilindi
+30 epoch ishlatildi
+
+Natijalar:
+accuracy ≈ 0.23
+val_accuracy ≈ 0.18
+
+Bu model saqlandi:
+
+models/uzagro_ai_model.h5
+
+
+3️⃣ GPU sozlash
+
+Kompyuter GPU:
+
+NVIDIA GeForce GTX 1660
+VRAM: 6GB
+
+Driver yangilandi:
+Version 595.79
+
+nvidia-smi tekshirildi
+GPU ishlayapti
+
+
+4️⃣ PyTorch o'rnatildi
+
+O'rnatilgan paketlar:
+
+torch
+torchvision
+torchaudio
+
+CUDA support bilan o'rnatildi
+
+Tekshirildi:
+
+torch.cuda.is_available()
+
+Natija:
+
+True
+
+Demak GPU PyTorch bilan ishlayapti
+
+
+5️⃣ PyTorch training script yaratildi
+
+Fayl:
+
+vision_ai/train_pytorch.py
+
+Model:
+
+EfficientNet B0
+
+Training:
+
+Epoch: 50
+Batch size: 32
+Optimizer: Adam
+Loss: CrossEntropy
+
+
+6️⃣ Model saqlash
+
+PyTorch model quyiga saqlanadi:
+
+models/uzagro_pytorch_model.pth
+
+
+7️⃣ UzAgroAI tizimi kelajakdagi modullar
+
+AI plant disease detection
+AI yield prediction
+Greenhouse sensor monitoring
+Drone field monitoring
+Mobile application
+ESP32 automation system
+
+
+8️⃣ UzAgroAI papka tuzilmasi
+
+UzAgroAI/
+
+datasets/
+models/
+vision_ai/
+drone_ai/
+greenhouse_ai/
+scripts/
+
+MASTER file:
+UzAgroAI_MASTER.txt
+
+=============================
+UzAgroAI DEVELOPMENT UPDATE
+=============================
+
+DATE: 2026-03-15
+
+9️⃣ PyTorch GPU training boshlandi
+
+Location:
+UzAgroAI/vision_ai/train_pytorch.py
+
+Dataset:
+datasets/train/PlantVillage
+
+Dataset size:
+≈ 33000 images
+
+Classes:
+15 ta o'simlik kasalligi sinfi
+
+Framework:
+PyTorch
+
+Model:
+EfficientNet-B0 (pretrained ImageNet)
+
+Hardware:
+GPU: NVIDIA GeForce GTX 1660
+VRAM: 6GB
+
+Training parameters:
+
+Epochs: 50
+Batch size: 32
+Optimizer: Adam
+Loss function: CrossEntropyLoss
+Image size: 224x224
+
+Training device:
+
+CUDA GPU
+
+Console output:
+
+Device: cuda
+
+Training started successfully.
+
+Loss decreasing normally.
+
+Example training logs:
+
+Epoch 1/50 Loss: 448
+Epoch 2/50 Loss: 219
+Epoch 3/50 Loss: 180
+Epoch 4/50 Loss: 169
+Epoch 5/50 Loss: 158
+Epoch 6/50 Loss: 147
+Epoch 7/50 Loss: 145
+Epoch 8/50 Loss: 142
+Epoch 9/50 Loss: 133
+Epoch 10/50 Loss: 133
+
+Training status:
+
+Running normally on GPU.
+
+Expected training time:
+
+≈ 15 minutes for 50 epochs.
+
+Model output location:
+
+models/uzagro_pytorch_model.pth
+
+Next planned steps:
+
+1. Complete 50 epoch training
+2. Test AI disease detection
+3. Build mobile camera detection
+4. Integrate with AgroAI mobile application
+5. Connect with greenhouse monitoring system
+ 
+UzAgroAI LOYIHA HOLATI (2026)
+
+1. AI MODEL YARATILDI
+
+* Model: EfficientNet B0
+* Framework: PyTorch
+* GPU: NVIDIA GTX 1660 Super
+* Training: CUDA orqali GPU ishlatildi
+
+2. DATASET
+   Dataset joylashuvi:
+   datasets/train/PlantVillage
+
+Dataset tarkibi:
+
+* Pomidor kasalliklari
+* Kartoshka kasalliklari
+* Qalampir kasalliklari
+
+Jami klasslar:
+15 ta kasallik klassi
+
+3. AI TRAINING
+
+Training skripti:
+vision_ai/train_pytorch.py
+
+Training sozlamalari:
+
+* Epoch: 50
+* Optimizer: Adam
+* Learning rate: 0.0003
+* Data augmentation qo‘shildi
+
+GPU training muvaffaqiyatli tugadi.
+
+Training natijasi:
+Boshlanish loss:
+158
+
+Oxirgi loss:
+3.77
+
+Bu model muvaffaqiyatli o‘rganganini ko‘rsatadi.
+
+4. MODEL SAQLANDI
+
+Models papkasi:
+
+UzAgroAI/models
+
+Saqlangan fayllar:
+
+uzagro_epoch_1.pth
+uzagro_epoch_2.pt
+ 
+UzAgroAI MASTER LOG
+Sana: 2026-03-15
+
+============================
+UZAGROAI LOYIHA HOLATI
+======================
+
+Loyiha nomi: UzAgroAI
+Loyiha turi: AI + Mobil ilova + Issiqxona avtomatizatsiya tizimi
+
+Asosiy maqsad:
+Dehqonlar va issiqxona egalari uchun AI yordamida ekin kasalliklarini aniqlash, monitoring qilish va avtomatik boshqaruv tizimini yaratish.
+
+---
+
+## 1-BOSQICH: AI MODEL YARATISH
+
+Dataset:
+PlantVillage dataset ishlatildi.
+
+Dataset joylashuvi:
+datasets/train/PlantVillage
+
+AI model:
+EfficientNetB0
+
+Framework:
+PyTorch
+
+Training:
+GPU yordamida training qilindi.
+
+Epoch:
+50 epoch
+
+Training natijasi:
+Loss qiymati training davomida sezilarli kamaydi.
+
+Natija:
+uzagro_ai_final.pth modeli yaratildi.
+
+Model joylashuvi:
+models/uzagro_ai_final.pth
+
+---
+
+## 2-BOSQICH: AI TEST QILISH
+
+Test skript:
+test_ai.py
+
+AI test qilish uchun rasm berildi.
+
+Test natijasi:
+
+Aniqlangan kasallik:
+Tomato Yellow Leaf Curl Virus
+
+Natija:
+AI model to‘g‘ri ishlayotgani tasdiqlandi.
+
+Kasallik nomlari keyinchalik o‘zbek tiliga o‘girildi.
+
+---
+
+## 3-BOSQICH: DEVELOPMENT MUHITINI TAYYORLASH
+
+Flutter o‘rnatildi.
+
+Flutter papkasi joylashuvi:
+C:\flutter
+
+PATH ga qo‘shildi:
+C:\flutter\bin
+
+Tekshiruv:
+
+flutter doctor
+
+Natija:
+Flutter muvaffaqiyatli o‘rnatildi.
+
+---
+
+## 4-BOSQICH: ANDROID DEVELOPMENT MUHITI
+
+Android Studio o‘rnatildi.
+
+Versiya:
+Android Studio Panda
+
+Android SDK yuklandi.
+
+Android Emulator o‘rnatildi.
+
+Natija:
+Flutter Android development uchun tayyorlandi.
+
+---
+
+## 5-BOSQICH: MOBIL ILOVA ARXITEKTURASI
+
+UzAgroAI mobil ilovasi Flutter yordamida yaratiladi.
+
+Birinchi versiya (MVP):
+
+Minimal funksiyalar:
+
+1. Kamera orqali rasm olish
+2. Galereyadan rasm yuklash
+3. AI orqali kasallik aniqlash
+4. Natijani o‘zbek tilida chiqarish
+
+Ilova oqimi:
+
+1-Ekran
+UzAgroAI
+AI Crop Doctor
+
+Tugmalar:
+
+* Kamera orqali tekshirish
+* Rasm yuklash
+
+2-Ekran
+AI tekshiruv jarayoni
+Loading animatsiya
+
+3-Ekran
+Kasallik natijasi
+
+Misol:
+
+Kasallik:
+Pomidor sariq barg virusi
+
+Ishonchlilik:
+92%
+
+Tavsiya:
+Zararlangan barglarni olib tashlang.
+
+---
+
+## 6-BOSQICH: KEYINGI REJALAR
+
+Keyingi versiyalarda qo‘shiladi:
+
+Issiqxona monitoring:
+
+* Harorat sensori
+* Namlik sensori
+* Tuproq namligi
+* Yorug‘lik sensori
+
+AI funksiyalar:
+
+* Hosil prognozi
+* AI agronom maslahat
+* Kamera monitoring
+
+Smart boshqaruv:
+
+* Sug‘orish tizimi
+* Ventilyator boshqaruvi
+* Isitish tizimi
+
+Energiya monitoring:
+
+* Solar panel monitoring
+* Energiya statistikasi
+
+---
+
+Keyingi qadam:
+
+Flutter loyihasini yaratish.
+
+Terminal buyrug‘i:
+
+flutter create uzagroai_app
+
+So‘ng:
+
+cd uzagroai_app
+
+Shundan keyin UzAgroAI mobil ilovasini yaratish boshlanadi.
+
+UZAGROAI PROJECT MASTER LOG
+
+Project name: UzAgroAI
+Goal: AI yordamida o‘simlik kasalliklarini aniqlovchi mobil ilova yaratish.
+
+STEP 1 — Development Environment
+
+* Flutter o‘rnatildi
+* Android SDK o‘rnatildi
+* Telefon USB orqali ulab test qilindi
+
+STEP 2 — Flutter Project
+
+* Flutter project yaratildi: uzagroai_app
+* Android project qayta generate qilindi (flutter create .)
+
+STEP 3 — Dependency Fix
+
+* pytorch_lite package xatosi aniqlangan
+* namespace Gradle xatosi sabab ishlamagan
+* pytorch_lite olib tashlandi
+* executorch_flutter ishlatishga o‘tildi
+
+STEP 4 — pubspec.yaml
+To‘g‘ri dependency konfiguratsiyasi:
+
+dependencies:
+flutter:
+sdk: flutter
+
+image_picker: ^1.0.4
+executorch_flutter: ^0.1.0
+cupertino_icons: ^1.0.8
+
+STEP 5 — AI Model
+Model fayl projectga qo‘shildi:
+
+assets/model/uzagro_ai_mobile.pt
+
+pubspec.yaml ga asset sifatida qo‘shildi.
+
+STEP 6 — Build
+flutter clean
+flutter pub get
+flutter run
+
+APK build bo‘ldi:
+build/app/outputs/flutter-apk/app-debug.apk
+
+STEP 7 — Successful Run
+Ilova Samsung Z Flip 5 telefonida ishga tushdi.
+
+Interface:
+UzAgroAI
+AI Crop Doctor
+Natija hali yo'q
+Rasm yuklash
+
+STATUS:
+Application UI successfully running on device.
+
+NEXT STEP (Future):
+
+* AI modelni rasmga ulash
+* Image preprocessing
+* Disease prediction
+* Resultni UI ga chiqarish
+ 
+UZAGROAI LOYIHASI – MASTER HISOBOT
+Sana: 2026
+
+---
+
+1. LOYIHA BOSHLANDI
+
+Bugun UzAgroAI mobil ilovasi uchun Flutter asosidagi loyiha yaratildi.
+
+Loyiha nomi:
+uzagroai_app
+
+Asosiy loyiha struktura:
+
+lib/
+assets/
+assets/model/
+pubspec.yaml
+main.dart
+
+Flutter muhiti ishga tushirildi va loyiha kompyuter hamda telefon bilan bog‘landi.
+
+---
+
+2. UI (FOYDALANUVCHI INTERFEYSI) YARATILDI
+
+UzAgroAI ilovasi uchun kirish ekrani (Login Screen) dizayni yaratildi.
+
+Dizayn elementlari:
+
+* AgroAI logo
+* futuristik AI uslub
+* neon ranglar
+* tabiiy agro fon
+* minimal interfeys
+
+UI elementlari:
+
+* Kirish tugmasi
+* Operator icon
+* AI logo
+* To‘liq ekran fon
+
+---
+
+3. ASSETS FAYLLAR QO‘SHILDI
+
+Ilova uchun assets papkasi yaratildi.
+
+assets/
+
+Qo‘shilgan fayllar:
+
+assets/login_bg.png
+assets/ai_page_bg.png
+assets/model/uzagro_ai_mobile.pt
+
+Bu fayllar ilova ichida ishlashi uchun pubspec.yaml fayliga ulab qo‘yildi.
+
+---
+
+4. PUBSPEC.YAML SOZLANDI
+
+Flutter assetlar ulanishi amalga oshirildi.
+
+flutter:
+uses-material-design: true
+
+assets:
+- assets/login_bg.png
+- assets/ai_page_bg.png
+- assets/model/uzagro_ai_mobile.pt
+
+---
+
+5. AI MODEL UCHUN KUTUBXONALAR O‘RNATILDI
+
+Ilova ichida AI ishlashi uchun quyidagi kutubxonalar o‘rnatildi:
+
+image_picker
+executorch_flutter
+cupertino_icons
+
+Bu kutubxonalar:
+
+* rasm yuklash
+* kamera ishlatish
+* AI model ishlatish
+
+uchun kerak bo‘ladi.
+
+---
+
+6. LOGIN EKRAN ISHLADI
+
+Flutter ilova telefon qurilmada muvaffaqiyatli ishga tushirildi.
+
+Test qurilma:
+Samsung Z Flip 5
+
+Natija:
+
+* ilova ochildi
+* kirish ekrani chiqdi
+* tugma ishladi
+* operator icon ishladi
+
+---
+
+7. DEMO HOLAT
+
+Ilovaning birinchi demo versiyasi tayyor bo‘ldi.
+
+Demo funksiyalar:
+
+* kirish ekrani
+* dizayn
+* UI elementlar
+* assets ishlashi
+
+---
+
+8. LOYIHA HOZIRGI HOLATI
+
+Flutter loyiha: Tayyor
+Login UI: Tayyor
+Assets: Tayyor
+AI model ulanish: Boshlanish bosqichi
+Camera: hali qilinmagan
+AI analiz: hali qilinmagan
+
+---
+
+9. KEYINGI BOSQICHLAR
+
+Keyingi ishlar:
+
+1. Kamera tugmasi qo‘shish
+2. Rasm yuklash funksiyasi
+3. AI model ulash
+4. O‘simlik kasalliklarini aniqlash
+5. Natija chiqarish
+
+---
+
+10. BUGUNGI NATIJA
+
+Bugungi ishlar natijasida UzAgroAI loyihasi taxminan 35% tayyor holatga keldi.
+
+Ilova:
+
+* Flutter muhitida ishlayapti
+* mobil qurilmada ishga tushdi
+* UI yaratildi
+* AI ulash uchun tayyor
+
+---
+
+Hisobot muallifi:
+Murodjon Usubjonov
+
+UzAgroAI loyihasi asoschisi.
+
+
+📅 Sana: 2026-03-21
+
+📌 Loyiha nomi: UzAgroAI (O‘simlik kasalliklarini aniqlash tizimi)
+
+🔧 Bugungi bajarilgan ishlar:
+
+1. Flutter loyihasi yaratildi va asosiy struktura shakllantirildi.
+
+2. Login sahifasi (Kirish oynasi) ishlab chiqildi:
+
+   * Maxsus dizayn (background image) qo‘shildi
+   * "Kirish" tugmasi yaratildi
+   * Operator (support) icon qo‘shildi
+
+3. UI dizayn optimizatsiya qilindi:
+
+   * SafeArea orqali status bar muammosi hal qilindi
+   * Tugmalar joylashuvi bir necha bor tuzatildi
+   * Yakuniy holatda tugmalar markazda va estetik joylashdi
+
+4. HomePage (asosiy sahifa) yaratildi:
+
+   * Background rasm bilan to‘liq dizayn berildi
+   * 2 ta asosiy tugma qo‘shildi:
+     • "Rasmga olish"
+     • "Rasmni yuklash"
+   * Tugmalar ustma-ust (vertical) joylashtirildi
+
+5. Navigatsiya tizimi qo‘shildi:
+
+   * LoginPage → HomePage o‘tish ishladi
+
+6. image_picker kutubxonasi qo‘shildi:
+
+   * Kamera orqali rasm olish funksiyasi qo‘shildi
+   * Galereyadan rasm yuklash funksiyasi qo‘shildi
+
+7. Tugmalar funksional qilindi:
+
+   * Kamera ochilishi ishladi
+   * Galereya ochilishi ishladi
+   * Tanlangan rasm ekranga chiqarildi
+
+8. pubspec.yaml to‘g‘ri sozlandi:
+
+   * image_picker qo‘shildi
+   * executorch_flutter to‘g‘ri yozildi
+   * assets (rasmlar va model) to‘g‘ri ulandi
+
+9. Asset struktura to‘g‘rilandi:
+
+   * login_bg.png
+   * ai_page_bg.png
+   * uzagro_ai_mobile.pt (model)
+
+10. Loyihaning asosiy UI va funksional qismi to‘liq ish holatiga keltirildi.
+
+---
+
+🎯 Hozirgi holat:
+
+✔ Ilova to‘liq ishga tushadi
+✔ UI dizayn tayyor
+✔ Kamera va galereya ishlaydi
+✔ Model fayl loyihaga ulangan
+
+---
+
+🚀 Keyingi bosqich:
+
+* AI modelni Flutterga ulash
+* Rasmni modelga yuborish
+* Kasallikni aniqlash (classification)
+* Natijani foydalanuvchiga chiqarish
+* Loading animatsiya qo‘shish
+
+---
+
+🧠 Xulosa:
+
+Bugungi kunda loyiha frontend va asosiy funksional jihatdan tayyorlandi. Endi asosiy e’tibor sun’iy intellekt modelini integratsiya qilish va natijani chiqarishga qaratiladi.
+
+Hisobot muallifi:
+Murodjon Usubjonov
+
+UzAgroAI loyihasi asoschisi.
+
