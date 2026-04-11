@@ -1117,3 +1117,64 @@ Murodjon Usubjonov
 
 UzAgroAI loyihasi asoschisi.
 
+UZAGRO AI PROJECT HISOBOTI
+Sana: 2026-04-11
+
+Bugungi ishlar haqida to‘liq hisobot:
+
+1. Git bilan ishlash:
+Bugun loyiha GitHub platformasiga joylandi. Dastlab katta hajmdagi fayllar (models va datasets) sababli push jarayonida xatoliklar yuzaga keldi. Ushbu muammo chuqur tahlil qilindi va quyidagi yechim qo‘llanildi:
+
+- models papkasi loyihadan chiqarildi
+- datasets papkasi loyihadan chiqarildi
+- .gitignore fayliga quyidagilar qo‘shildi:
+  models/
+  datasets/
+  *.pth
+
+Natijada loyiha hajmi kichraytirildi va GitHub talablariga mos holga keltirildi.
+
+2. Git repositoryni tozalash:
+- .git papkasi o‘chirildi
+- git init orqali yangi repository yaratildi
+- git add . orqali fayllar qo‘shildi
+- git commit orqali toza holatda commit qilindi
+
+3. GitHubga muvaffaqiyatli yuklash:
+Loyiha quyidagi repositoryga joylandi:
+https://github.com/usubjonovmurodjon7-crypto/uzagro-ai
+
+Push jarayoni muammosiz yakunlandi.
+
+4. Server va API:
+Loyihada FastAPI asosida server ishlatilmoqda.
+server.py fayli orqali:
+- rasm qabul qilish
+- model orqali klassifikatsiya qilish
+- natijani qaytarish
+
+5. Muammolar va ularning yechimlari:
+- Katta fayllar (1.69GB) push qilinmadi → models chiqarildi
+- Dataset (700MB+) muammo berdi → datasets chiqarildi
+- Git xatolari (RPC failed, 408, 400) → tozalash orqali hal qilindi
+- Remote muammolari → qayta ulash orqali hal qilindi
+
+6. O‘rganilgan bilimlar:
+- Git katta fayllar uchun mo‘ljallanmagan
+- .gitignore muhim
+- AI loyihalarda model va dataset alohida saqlanadi
+- Toza repository yaratish kerak
+- Terminal bilan ishlash ko‘nikmalari rivojlandi
+
+7. Natija:
+- Toza va professional loyiha yaratildi
+- GitHubga muvaffaqiyatli yuklandi
+- Keyingi bosqichga tayyor (cloud deploy)
+
+8. Keyingi rejalar:
+- Render platformasiga deploy qilish
+- Serverni 24/7 ishlaydigan qilish
+- Mobil ilova bilan to‘liq integratsiya
+
+Xulosa:
+Bugungi ishlar davomida katta muammolar mustaqil hal qilindi va loyiha professional darajaga olib chiqildi.
